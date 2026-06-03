@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - User Management</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        .back-link { color: #667eea; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Admin Panel - User Management</h1>
+            <p><a href="/dashboard" class="back-link">← Back to Dashboard</a></p>
+            <hr>
+            <p th:text="${message}">Admin content here</p>
+            <p><em>(This is a placeholder - you can expand with full CRUD operations)</em></p>
+        </div>
+    </div>
+</body>
+</html>
